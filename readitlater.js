@@ -186,10 +186,11 @@ let ReadItLater = {
 	  let res = libly.$U.evalJson(data.responseText);
 	  liberator.echo(
 		<style type="text/css"><![CDATA[
-			div.result{padding-left:1em;line-height:1.5em;}
-			.result a{color:#7fff00;}
-			.result a:hover{color:#ff1493;}
-		]]></style> 
+			div.result{color:gold;padding-left:1em;line-height:1.5em;}
+			.result a{text-decoration:none;}
+			.result a:hover{text-decoration:underline;}
+		]]></style> +
+		<div>#ReadItLater Your List</div> 
 	  );
 	  for (let key in res.list){
 		liberator.echo(
