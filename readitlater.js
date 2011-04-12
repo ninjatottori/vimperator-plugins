@@ -186,7 +186,7 @@ let ReadItLater = {
 	  let res = libly.$U.evalJson(data.responseText);
 	  liberator.echo(
 		<style type="text/css"><![CDATA[
-			div.result{font-weight:bold;text-decoration:underline;padding-left:1em;line-height:1.5em;}
+			div.result{padding-left:1em;line-height:1.5em;}
 			.result a{color:#7fff00;}
 			.result a:hover{color:#ff1493;}
 		]]></style> 
