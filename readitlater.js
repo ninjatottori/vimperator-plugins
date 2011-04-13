@@ -13,6 +13,7 @@ let PLUGIN_INFO =
   <minVersion>3.0</minVersion>
   <maxVersion>3.0</maxVersion>
   <author mail="ninja.tottori@gmail.com" homepage="http://twitter.com/ninja_tottori">ninja.tottori</author>
+  <updateURL>https://github.com/vimpr/vimperator-plugins/raw/master/readitlater.js</updateURL>
   <detail lang="ja"><![CDATA[
 	ReadItLaterに追加したりするプラグインです。
 
