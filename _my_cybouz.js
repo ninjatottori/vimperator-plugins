@@ -216,17 +216,15 @@ let Cybouz = {
 		);
 		req.addEventListener("onSuccess",function(data){
 			let response = libly.$U.createHTMLDocument(data.responseText);
+			let head = "";
 			let html = util.evaluateXPath('//*[@id="userday"]',response).snapshotItem(0);
 			html = new XMLSerializer().serializeToString(html) 
-			liberator.echo(
-				<div>
+			head= <div>
 					{" /*** " + _date }  
 					<span style="color:red;font-weight:bold;">{ " " + _uname + " "}</span> 
 					{ "***/ "}
-				</div>
-				,true
-				)
-			liberator.echo(new XML(html),true)
+				</div>;
+			liberator.echo(head + new XML(html),true)
 		});
 		req.addEventListener("onFailure",function(data){
 			liberator.echoerr(data.statusText);
