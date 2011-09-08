@@ -1,9 +1,27 @@
-/*
- * atnd.js
- * http://atnd.org/
- * API Reffernce : http://api.atnd.org/
- *
- */
+// INFO {{{
+let INFO =
+<>
+  <plugin name="atnd" version="0.1.0"
+          href="http://github.com/vimpr/vimperator-plugins/blob/master/atnd.js"
+          summary="Atndのイベント検索"
+          lang="ja"
+          xmlns="http://vimperator.org/namespaces/liberator">
+    <author email="ninja.tottori@gmail.com">ninjatottori</author>
+    <license>New BSD License</license>
+    <project name="Vimperator" minVersion="3.0"/>
+    <p>Event search on Atnd</p>
+    <item>
+      <tags>:atnd</tags>
+      <description>
+        <p>search on atnd</p>
+		<p>:atnd keyword で補完リストにkeywordで取得したイベントを補完します。<br />
+		補完リストを使わず、:atnd keyword &lt;Enter&rt; するとMOWに表示します
+		</p>
+      </description>
+    </item>
+  </plugin>
+</>;
+// }}}
 
 
 (function(){
